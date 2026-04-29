@@ -543,3 +543,46 @@ button:hover {
   text-align: center;
   line-height: 1.6;
 }
+
+
+.store-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f5eaea;
+  padding: 40px;
+  border-radius: 20px;
+}
+
+/* 左テキスト */
+.store-text {
+  max-width: 50%;
+}
+
+/* 右画像 */
+.store-image {
+  max-width: 45%;
+}
+
+.store-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+
+@media (max-width: 768px) {
+  .store-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .store-text,
+  .store-image {
+    max-width: 100%;
+  }
+
+  .store-image img {
+    margin-top: 20px;
+  }
+}
